@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fei Wu (吴非) · King's College London</title>
+  <meta name="description" content="Fei Wu is a PhD candidate in Computer Science at King's College London, researching MEV, blockchain market structure, fee markets and mechanism design.">
+  <meta name="author" content="Fei Wu">
+  <link rel="canonical" href="https://m1kuw1ll.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fei Wu (吴非)">
+  <meta property="og:description" content="PhD candidate at King's College London researching MEV, block building, fee markets and mechanism design.">
+  <meta property="og:url" content="https://m1kuw1ll.github.io/">
+  <meta property="og:image" content="https://m1kuw1ll.github.io/assets/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="page">
+    <!-- ============ Sidebar ============ -->
+    <aside class="sidebar">
+      <img class="avatar" src="assets/img/profile.jpg" alt="Fei Wu" width="168" height="168">
+
+      <div class="ident">
+        <h1 class="name">Fei Wu <span class="name-zh" lang="zh-Hans">吴非</span></h1>
+        <p class="role">PhD Candidate in Computer Science</p>
+        <p class="affil">
+          <a href="https://www.kcl.ac.uk/informatics">Department of Informatics</a><br>
+          <a href="https://www.kcl.ac.uk/">King's College London</a>
+        </p>
+        <p class="loc"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> London, UK</p>
+      </div>
+
+      <ul class="social" aria-label="Contact and profiles">
+        <li><a href="mailto:fei.wu@kcl.ac.uk" title="Email: fei.wu@kcl.ac.uk" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://x.com/William33203632" title="X (Twitter): @William33203632" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/M1kuW1ll" title="GitHub: @M1kuW1ll" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <!-- Add your Google Scholar profile by replacing YOUR_ID and uncommenting:
+        <li><a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a></li>
+        -->
+        <li><a href="cv.pdf" title="CV (PDF)" aria-label="CV (PDF)"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></a></li>
+      </ul>
+    </aside>
+
+    <!-- ============ Main ============ -->
+    <main class="main" id="content">
+      <nav class="tabs" aria-label="Sections">
+        <a href="#about" data-tab="about">About</a>
+        <a href="#research" data-tab="research">Research</a>
+        <a href="#service" data-tab="service">Service</a>
+        <a href="#cv" data-tab="cv">CV</a>
+        <a href="#fun" data-tab="fun">Fun</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle colour theme"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
+      </nav>
+
+      <!-- ---------- About ---------- -->
+      <section id="about" class="panel">
+        <div class="block">
+          <h2 class="section-title">About me</h2>
+          <p class="lead">
+            I am a fourth-year (final-year) PhD student in Computer Science at the
+            <a href="https://www.kcl.ac.uk/informatics">Department of Informatics</a>, King's College London,
+            supervised by <a href="https://stefanosleonardos.com/">Dr. Stefanos Leonardos</a> and
+            <a href="https://www.kcl.ac.uk/people/carmine-ventre">Prof. Carmine Ventre</a>.
+            Before my PhD, I obtained my MSc in Computer Science at the University of Southampton.
+          </p>
+          <p>
+            My research centers on Decentralized Finance (DeFi) and crypto-economics. I currently focus on the
+            economics of Maximal Extractable Value (MEV) and Ethereum protocol design, combining game theory,
+            agent-based modeling and simulation, empirical data analysis, and mechanism design.
+          </p>
+          <p>
+            I am fortunate to be advised by researchers from the (former)
+            <a href="https://rig.ethereum.org/">Robust Incentives Group</a> of the Ethereum Foundation and
+            <a href="https://www.flashbots.net/">Flashbots</a>.
+          </p>
+
+          <div class="themes">
+            <div class="theme-card">
+              <span class="theme-icon"><i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i></span>
+              <h3>MEV &amp; arbitrage</h3>
+              <p>How searchers compete for MEV, from CEX-DEX arbitrage on Ethereum to probing on high-throughput chains.</p>
+            </div>
+            <div class="theme-card">
+              <span class="theme-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></span>
+              <h3>Block building &amp; PBS</h3>
+              <p>Bidding, centralization and geography in MEV-Boost auctions, ePBS and decentralized block building.</p>
+            </div>
+            <div class="theme-card">
+              <span class="theme-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span>
+              <h3>Fee markets</h3>
+              <p>Demand, elasticities and multidimensional pricing of Ethereum's execution, data and state resources.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Experience</h2>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">Jun 2026 – Sep 2026</span>
+              <div>
+                <div class="tl-title">Research Intern · <span class="tl-org">Ethereum Foundation</span></div>
+                <div class="tl-desc">Protocol research on multidimensional fee markets.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">Feb 2026 – May 2026</span>
+              <div>
+                <div class="tl-title">Research Intern · <span class="tl-org">Flashbots</span></div>
+                <div class="tl-desc">MEV on high-throughput blockchains; incentives in decentralized block building.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">Aug 2024 – May 2025</span>
+              <div>
+                <div class="tl-title">Research Fellow · <span class="tl-org">The Latest in DeFi Research (TLDR)</span></div>
+                <div class="tl-desc">CEX-DEX arbitrage on Ethereum.</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="block">
+          <div class="section-head">
+            <h2 class="section-title">Selected publications</h2>
+            <a class="more-link" href="#research">All papers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <ul class="pubs" id="selected-pubs"></ul>
+          <noscript><p>The publication list needs JavaScript. See the <a href="cv.pdf">CV</a> for a full list.</p></noscript>
+        </div>
+      </section>
+
+      <!-- ---------- Research ---------- -->
+      <section id="research" class="panel">
+        <div class="block">
+          <div class="section-head">
+            <h2 class="section-title">Papers</h2>
+            <span class="legend"><sup>*</sup> equal contribution</span>
+          </div>
+          <div id="all-pubs"></div>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Posts, data &amp; code</h2>
+
+          <h3 class="group-title">EVM resources &amp; fee markets</h3>
+          <p class="group-sub">A series on ethresear.ch with Maria Silva, 2026.</p>
+          <ul class="outputs">
+            <li><a href="https://ethresear.ch/t/post-glamsterdam-one-dimensional-fee-market-and-comparison-with-eip-7999/26062">Post-Glamsterdam One-dimensional Fee Market and Comparison with EIP-7999</a></li>
+            <li><a href="https://ethresear.ch/t/when-data-binds-execution-dynamic-simulation-of-eip-7999-s-multidimensional-fee-market/26018">When Data Binds Execution: Dynamic Simulation of EIP-7999's Multidimensional Fee Market</a></li>
+            <li><a href="https://ethresear.ch/t/equilibrium-in-eip-7999-s-multidimensional-fee-market-the-execution-data-fee-floor-frontier/25868">Equilibrium in EIP-7999's Multidimensional Fee Market: The Execution–Data Fee-Floor Frontier</a></li>
+            <li><a href="https://ethresear.ch/t/data-metering-bal-decomposition-and-bundle-pricing-under-eip-7999/25747">Data Metering, BAL Decomposition, and Bundle Pricing Under EIP-7999</a></li>
+            <li><a href="https://ethresear.ch/t/demand-model-with-elasticities-for-ethereum-state-data-and-execution-and-glamsterdam-fee-market-analysis/25644">Demand Model with Elasticities for Ethereum State, Data, and Execution and Glamsterdam Fee Market Analysis</a></li>
+          </ul>
+
+          <h3 class="group-title">Geographic decentralization</h3>
+          <ul class="outputs">
+            <li>
+              <a href="https://writings.flashbots.net/why-location-choice-matters">Why Location Choice Matters</a>
+              <span class="out-meta">Burak Öz, <span class="me">Fei Wu</span>, et al. · Flashbots Writings</span>
+            </li>
+            <li>
+              <a href="https://collective.flashbots.net/t/prisoners-of-geography-2-0-the-theory-behind-where-validators-want-to-run/5647">Prisoners of Geography 2.0: The Theory Behind Where Validators Want to Run</a>
+              <span class="out-meta"><span class="me">Fei Wu</span> · Flashbots Collective</span>
+            </li>
+          </ul>
+
+          <h3 class="group-title">MEV</h3>
+          <ul class="outputs">
+            <li>
+              <a href="https://collective.flashbots.net/t/to-wait-or-to-probe-arbitrage-competition-on-high-throughput-blockchains/5759">To Wait or To Probe: Arbitrage Competition on High-Throughput Blockchains</a>
+              <span class="out-meta"><span class="me">Fei Wu</span> and Burak Öz · Flashbots Collective</span>
+            </li>
+            <li>
+              <a href="https://dune.com/rig_ef/cex-dex-dash">CEX-DEX Arbitrages Dashboard</a>
+              <span class="out-meta"><span class="me">Fei Wu</span> · Dune</span>
+            </li>
+            <li>
+              <a href="https://dune.com/queries/4931834">CEX-DEX Arbitrage Heuristics and Dataset</a>
+              <span class="out-meta"><span class="me">Fei Wu</span> and Danning Sui · Dune query</span>
+            </li>
+          </ul>
+
+          <h3 class="group-title">PBS &amp; MEV-Boost</h3>
+          <ul class="outputs">
+            <li>
+              The Free Option Problem in ePBS:
+              <a href="https://collective.flashbots.net/t/the-free-option-problem-in-epbs/5115">Part I</a> ·
+              <a href="https://collective.flashbots.net/t/the-free-option-problem-in-epbs-part-ii/5145">Part II</a>
+              <span class="out-meta">Christoph Schlegel, Bruno Mazorra, Burak Öz, <span class="me">Fei Wu</span>, et al. · Flashbots Collective</span>
+            </li>
+            <li>
+              <a href="https://github.com/M1kuW1ll/MMASim">MMASim: MEV-Boost Auction Simulation Framework</a>
+              <span class="out-meta"><span class="me">Fei Wu</span> and Thomas Thiery · GitHub</span>
+            </li>
+            <li>
+              <a href="https://ethresear.ch/t/game-theoretic-model-for-mev-boost-auctions-mma/16206/1">Game-theoretic Model for MEV-boost Auctions (MMA)</a>
+              <span class="out-meta">Thomas Thiery, Julian Ma, <span class="me">Fei Wu</span>, et al. · ethresear.ch</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ---------- Service ---------- -->
+      <section id="service" class="panel">
+        <div class="block">
+          <h2 class="section-title">Teaching</h2>
+          <p class="group-sub">Graduate Teaching Assistant, King's College London (MSc-level modules).</p>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">2025 – 2026</span>
+              <div><div class="tl-title"><span class="code">7CSSMSCF</span> Scientific Computing for Finance</div></div>
+            </li>
+            <li>
+              <span class="tl-date">2024 – 2025</span>
+              <div>
+                <div class="tl-title"><span class="code">7CSSMDLC</span> Distributed Ledger Technology and Cryptocurrencies</div>
+                <div class="tl-title"><span class="code">7CSSMAMF</span> Agent-based Modelling in Finance</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Program committee</h2>
+          <ul class="chips">
+            <li>Designing DeFi Conference (D<sup>2</sup>) 2026</li>
+            <li>AAMAS 2026</li>
+            <li>DAI 2025</li>
+            <li>AAMAS 2025</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Reviewing</h2>
+          <h3 class="group-title">Conferences</h3>
+          <ul class="chips">
+            <li>AFT 2026</li>
+            <li>FC 2026</li>
+            <li>IJCAI 2025</li>
+            <li>AAAI 2025</li>
+            <li>ACM EC 2024</li>
+            <li>WINE 2023</li>
+          </ul>
+          <h3 class="group-title">Journals</h3>
+          <ul class="chips">
+            <li>ACM Distributed Ledger Technologies: Research &amp; Practice</li>
+            <li>Blockchain: Research and Applications</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Talks</h2>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">2025</span>
+              <div>
+                <div class="tl-title">Measuring CEX-DEX Extracted Value and Searcher Profitability</div>
+                <div class="tl-desc">The Latest in DeFi Research (TLDR) Conference 2025 · <a href="https://www.youtube.com/watch?v=VjR93reL-OA">video</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2024</span>
+              <div>
+                <div class="tl-title">Strategic Bidding Wars in On-chain Auctions</div>
+                <div class="tl-desc">IEEE ICBC 2024, Trinity College Dublin · <a href="https://x.com/will_wjk/status/1796097149471539501">post</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">23 Feb 2024</span>
+              <div>
+                <div class="tl-title">Strategic Bidding Wars in On-chain Auctions</div>
+                <div class="tl-desc"><a href="https://www.lse.ac.uk/Mathematics/Events-and-Seminars/Seminar-and-PhD-Seminar-on-Combinatorics-Games-and-Optimisation">PhD Seminar on Combinatorics, Games and Optimisation</a>, LSE Mathematics</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ---------- CV ---------- -->
+      <section id="cv" class="panel">
+        <div class="block">
+          <div class="section-head">
+            <h2 class="section-title">Curriculum vitae</h2>
+            <a class="btn" href="cv.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF</a>
+          </div>
+
+          <h3 class="group-title">Education</h3>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">2023 – present</span>
+              <div>
+                <div class="tl-title">MPhil/PhD in Computer Science · <span class="tl-org">King's College London</span></div>
+                <div class="tl-desc">Thesis project: <em>The Economics of Maximal Extractable Value in Decentralized Finance</em>.
+                  Supervised by Dr. Stefanos Leonardos and Prof. Carmine Ventre.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2021 – 2022</span>
+              <div>
+                <div class="tl-title">MSc in Computer Science · <span class="tl-org">University of Southampton</span></div>
+                <div class="tl-desc">Distinction.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2017 – 2021</span>
+              <div>
+                <div class="tl-title">BSc in Computer Science · <span class="tl-org">New York Institute of Technology</span></div>
+                <div class="tl-title">BEng in Computer Science and Technology · <span class="tl-org">Nanjing University of Posts and Telecommunications</span></div>
+                <div class="tl-desc">Dual-degree overseas program.</div>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="group-title">Experience</h3>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">Jun 2026 – Sep 2026</span>
+              <div>
+                <div class="tl-title">Research Intern · <span class="tl-org">Ethereum Foundation</span></div>
+                <div class="tl-desc">Modelled demand and price elasticities across Ethereum's execution, data and state resources;
+                  evaluated EIP-7999 and post-Glamsterdam one-dimensional fee market designs through equilibrium analysis and dynamic simulation.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">Feb 2026 – May 2026</span>
+              <div>
+                <div class="tl-title">Research Intern · <span class="tl-org">Flashbots</span></div>
+                <div class="tl-desc">Arbitrage search strategies on high-throughput blockchains and the resulting waste of blockspace;
+                  incentive structures in decentralized block building.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">Aug 2024 – May 2025</span>
+              <div>
+                <div class="tl-title">Research Fellow · <span class="tl-org">The Latest in DeFi Research (Uniswap Foundation)</span></div>
+                <div class="tl-desc">Applied research on arbitrage between centralized and decentralized exchanges on Ethereum.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2023 – present</span>
+              <div>
+                <div class="tl-title">Doctoral Researcher · <span class="tl-org">King's College London</span></div>
+                <div class="tl-desc">MEV economics and strategic incentives in Ethereum block-building markets; graduate teaching assistant.</div>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="group-title">Grants &amp; awards</h3>
+          <ol class="timeline">
+            <li>
+              <span class="tl-date">2025</span>
+              <div><div class="tl-title">Flashbots MEV Research Grant</div></div>
+            </li>
+            <li>
+              <span class="tl-date">2025 – 2026</span>
+              <div>
+                <div class="tl-title">Conference travel grants</div>
+                <div class="tl-desc">AFT 2025, EurAI ECAI 2025, FC 2026.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2024</span>
+              <div>
+                <div class="tl-title">The Latest in DeFi Research Fellowship</div>
+                <div class="tl-desc">Uniswap Foundation.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tl-date">2017 – 2021</span>
+              <div>
+                <div class="tl-title">Presidential Honor</div>
+                <div class="tl-desc">New York Institute of Technology (2017, 2019, 2021).</div>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="group-title">Skills &amp; languages</h3>
+          <dl class="facts">
+            <dt>Research</dt><dd>Game theory, agent-based modeling, simulation, empirical data analysis</dd>
+            <dt>Tools</dt><dd>Python, SQL (Dune Analytics), Java, Kotlin, LaTeX</dd>
+            <dt>Languages</dt><dd>Mandarin (native), English</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ---------- Fun ---------- -->
+      <section id="fun" class="panel">
+        <div class="block">
+          <h2 class="section-title">Outside research</h2>
+
+          <div class="fun-grid">
+            <article class="fun-card">
+              <span class="theme-icon"><i class="fa-solid fa-guitar" aria-hidden="true"></i></span>
+              <h3>Electric guitar</h3>
+              <p>I started playing in April 2023, inspired by Gotoh Hitori from <em>Bocchi the Rock!</em></p>
+              <ul class="gear">
+                <li><span>Guitars</span>Ibanez SA360 (Mirage Black); Fender Made in Japan Hybrid II (2024 Limited)</li>
+                <li><span>Amp</span>Marshall DSL1CR</li>
+                <li><span>Effects</span>Hotone Ampero II Stomp</li>
+              </ul>
+            </article>
+
+            <article class="fun-card">
+              <span class="theme-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></span>
+              <h3>Games</h3>
+              <p>3,000+ hours in Counter-Strike, plus Overwatch, Valorant, Rainbow Six Siege and Battlefield.
+                1,500+ hours across the Monster Hunter series.</p>
+            </article>
+
+            <article class="fun-card">
+              <span class="theme-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+              <h3>Reading</h3>
+              <p>Japanese literature, especially Murakami Haruki, Mishima Yukio and Natsume Sōseki, and philosophy.</p>
+            </article>
+
+            <article class="fun-card">
+              <span class="theme-icon"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>
+              <h3>Live events</h3>
+              <ul class="events">
+                <li><span>2026</span>Formula 1 Dutch Grand Prix</li>
+                <li><span>2022 · 24 · 25</span>Wimbledon</li>
+                <li><span>2024</span>CS2 BLAST Premier Spring Final</li>
+                <li><span>2024</span>VALORANT Masters Madrid</li>
+                <li><span>2023</span>Apex Legends Global Series Playoffs</li>
+                <li><span>2023</span>League of Legends Mid-Season Invitational</li>
+                <li><span>2022</span>CS:GO BLAST Premier Fall Final</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 Fei Wu</span>
+        <span>Last updated November 2026</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/publications.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
