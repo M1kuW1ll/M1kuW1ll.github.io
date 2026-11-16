@@ -131,6 +131,24 @@
     allEl.innerHTML = html;
   }
 
+  /* ---------------- YouTube: load the player only on click ---------------- */
+  document.querySelectorAll(".video[data-youtube]").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(link.dataset.youtube) + "?autoplay=1&rel=0";
+      frame.title = link.getAttribute("aria-label") || "YouTube video";
+      frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      var box = document.createElement("div");
+      box.className = "video";
+      box.appendChild(frame);
+      link.replaceWith(box);
+    });
+  });
+
   /* ---------------- Tabs (hash routing) ---------------- */
   var panels = Array.prototype.slice.call(document.querySelectorAll(".panel"));
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".tabs a[data-tab]"));
