@@ -22,6 +22,7 @@ Plain static HTML, CSS and JavaScript, with no build step and no Jekyll (`.nojek
 - **Replace the CV:** overwrite `cv.pdf`.
 - **Change the photo:** replace `assets/img/photo.jpg` (any portrait image; if the aspect ratio changes, update `aspect-ratio` on `.photo` in the CSS and the `width`/`height` on the `<img>`).
 - **Add Google Scholar:** uncomment the Scholar link in the sidebar of `index.html` and fill in your user ID.
+- **After editing CSS or JS:** bump the `?v=` value on the `<link>`/`<script>` tags in `index.html` (and the CSS link in `404.html`) so browsers fetch the new files instead of a cached copy.
 - **Change the accent colour:** edit `--accent` (and its dark-mode counterpart) in `assets/css/style.css`.
 
 ## Preview locally
