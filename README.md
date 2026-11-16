@@ -12,14 +12,15 @@ Plain static HTML, CSS and JavaScript, with no build step and no Jekyll (`.nojek
 | `assets/js/publications.js` | **The paper list.** Feeds both "Selected publications" and the Research tab |
 | `assets/js/main.js` | Tab switching (`#about`, `#research`, …), dark-mode toggle, publication rendering |
 | `assets/css/style.css` | Styles; colours are CSS variables at the top (light and dark) |
-| `assets/img/profile.jpg` | Profile photo (square; shown as a circle) |
+| `assets/img/photo.jpg` | Sidebar photo (full portrait) |
+| `assets/img/profile.jpg` | Square headshot used for link previews (`og:image`) |
 | `cv.pdf` | CV linked from the sidebar and the CV tab |
 
 ## Common edits
 
 - **Add a paper:** copy an entry in `assets/js/publications.js`, keep the list newest first, and set `selected: true` to also show it on the About tab.
 - **Replace the CV:** overwrite `cv.pdf`.
-- **Change the photo:** replace `assets/img/profile.jpg` with a square image of at least 400×400 px.
+- **Change the photo:** replace `assets/img/photo.jpg` (any portrait image; if the aspect ratio changes, update `aspect-ratio` on `.photo` in the CSS and the `width`/`height` on the `<img>`).
 - **Add Google Scholar:** uncomment the Scholar link in the sidebar of `index.html` and fill in your user ID.
 - **Change the accent colour:** edit `--accent` (and its dark-mode counterpart) in `assets/css/style.css`.
 
