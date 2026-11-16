@@ -330,9 +330,28 @@ sup { font-size: 0.7em; line-height: 0; }
 /* ---------- Research theme cards ---------- */
 .themes {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 28px;
+}
+
+.theme-card { display: flex; flex-direction: column; padding: 20px 20px 18px; }
+.theme-card h3 { font-size: 1.08rem; }
+
+.theme-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: auto 0 0;
+  padding: 14px 0 0;
+}
+.theme-tags li {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 500;
 }
 
 .theme-card,
@@ -348,7 +367,7 @@ sup { font-size: 0.7em; line-height: 0; }
 
 .theme-card h3,
 .fun-card h3 { margin: 12px 0 6px; font-size: 1rem; font-weight: 600; color: var(--text); }
-.theme-card p { margin: 0; font-size: 0.88rem; line-height: 1.55; color: var(--text-3); }
+.theme-card p { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text-2); }
 
 .theme-icon {
   display: grid;
