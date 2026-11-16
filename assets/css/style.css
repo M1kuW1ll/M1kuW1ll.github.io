@@ -570,6 +570,87 @@ sup { font-size: 0.7em; line-height: 0; }
   :root:not([data-theme="light"]) .btn,
   :root:not([data-theme="light"]) .btn:hover { color: var(--bg); }
 }
+/* Outline button; selectors match the dark-mode .btn rules' weight so they win. */
+:root .btn.btn-ghost { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+:root .btn.btn-ghost:hover { background: var(--accent-soft); color: var(--accent-strong); }
+
+/* ---------- Job market ---------- */
+.job-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 780px;
+  margin-bottom: 44px;
+  padding: 20px 22px 20px 26px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  scroll-margin-top: 110px;
+}
+/* Stripe in the colours of the Ethereum Foundation logo */
+.job-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, #f08a78, #ffeb5c, #58b36f, #18abd3, #6b7aba, #a566a6);
+}
+.job-banner.flash { animation: flash 1.8s ease; }
+
+.job-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.job-title {
+  margin: 2px 0 6px;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+.job-text p { margin: 0 0 14px; color: var(--text-2); }
+.job-text strong { color: var(--text); font-weight: 600; }
+.job-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.job-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 12px;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+.job-pill:hover { border-color: var(--accent); color: var(--accent); }
+.job-pill .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2fa66a;
+  animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(47, 166, 106, 0.55); }
+  70% { box-shadow: 0 0 0 7px rgba(47, 166, 106, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(47, 166, 106, 0); }
+}
 
 .facts {
   display: grid;
@@ -719,6 +800,8 @@ sup { font-size: 0.7em; line-height: 0; }
   .tabs a[aria-current="page"]::after { left: 9px; right: 9px; }
 
   .section-title { font-size: 1.45rem; }
+  .job-banner { flex-direction: column; gap: 12px; margin-bottom: 36px; padding: 18px 18px 18px 22px; }
+  .job-title { font-size: 1.25rem; }
   .block + .block { margin-top: 44px; }
 
   .themes,
